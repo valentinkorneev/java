@@ -18,6 +18,10 @@ public class MyFirstProgram {
 
 		System.out.println("Расстояние между двумя точками p1 и p2 равно " + p1.distance(p2));
 
+		int x, у;
+		у = 20;
+		for (x = 0; x==10; x++) { System.out.println("Знaчeниe х: "+ x); System.out.println("Знaчeниe у: "+у); у = у - 2;}
+
 	}
 
 	public static void hello(String somebody) {
