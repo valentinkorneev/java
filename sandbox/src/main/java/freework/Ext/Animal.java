@@ -1,6 +1,6 @@
 package freework.Ext;
 
-public class Animal {
+public abstract class Animal {
   private boolean hasSounds;
 
   public Animal (boolean hasSounds){
@@ -10,5 +10,7 @@ public class Animal {
   public boolean getHasSounds() {
     return hasSounds;
   }
+
+  public abstract void makeSounds();
 }
 
