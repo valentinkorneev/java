@@ -10,13 +10,13 @@ public class GroupCreationTests extends TestBase {
   @Test
   public void testGroupCreation() throws Exception {
 
-    app.wd.findElement(By.id("container")).click();
-    app.gotoGroupPage();
-    app.initGroupCreation("new");
-    app.fillGroupForm(new GroupData("test1", "test2", "test3"));
-    app.submitGroupCreation();
-    app.returnToGroupPage();
-    app.wd.findElement(By.linkText("Logout")).click();
+    app.getGroupHelper().wd.findElement(By.id("container")).click();
+    app.getNavigationHelper().gotoGroupPage();
+    app.getGroupHelper().initGroupCreation("new");
+    app.getGroupHelper().fillGroupForm(new GroupData("test1", "test2", "test3"));
+    app.getGroupHelper().submitGroupCreation();
+    app.getGroupHelper().returnToGroupPage();
+    app.getGroupHelper().wd.findElement(By.linkText("Logout")).click();
   }
 
 
