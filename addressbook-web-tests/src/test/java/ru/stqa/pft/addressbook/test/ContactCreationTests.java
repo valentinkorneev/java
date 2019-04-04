@@ -12,7 +12,7 @@ public class ContactCreationTests extends TestBase {
 
 
     app.getContactHelper().goToAddContacts();
-    app.getContactHelper().fillContactsForm(new ContactsData("jaredleto@thisisthehive.net", "+18885553535", "USA, California, Loss Angeles, The Hive", "jaja", "Leto", "Joseph", "Jared"));
+    app.getContactHelper().fillContactForm(new ContactsData("jaredleto@thisisthehive.net", "+18885553535", "USA, California, Loss Angeles, The Hive", "jaja", "Leto", "Joseph", "Jared", "test1"), true);
     app.getContactHelper().submitContactCreation();
     app.getSessionHelper().logout();
   }
