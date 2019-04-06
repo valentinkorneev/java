@@ -11,7 +11,7 @@ public class ContactCreationTests extends TestBase {
   public void testContactCreation() throws Exception {
 
 
-    app.getContactHelper().goToAddContacts();
+    app.getNavigationHelper().goToAddContacts();
     app.getContactHelper().fillContactForm(new ContactsData("jaredleto@thisisthehive.net", "+18885553535", "USA, California, Loss Angeles, The Hive", "jaja", "Leto", "Joseph", "Jared", "test1"), true);
     app.getContactHelper().submitContactCreation();
     app.getSessionHelper().logout();

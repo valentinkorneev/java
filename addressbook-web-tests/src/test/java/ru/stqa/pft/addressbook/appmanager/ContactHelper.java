@@ -35,11 +35,6 @@ public class ContactHelper extends HelperBase {
     }
   }
 
-  public void goToAddContacts() {
-    click(By.linkText("add new"));
-  }
-
-
   public void selectContact() {
     click(By.name("selected[]"));
   }
@@ -50,9 +45,7 @@ public class ContactHelper extends HelperBase {
   }
 
 
-  public void goToContacts() {
-    click(By.linkText("home"));
-  }
+
 
   public void initContactModification() {
     click(By.cssSelector("a > img[title='Edit']"));

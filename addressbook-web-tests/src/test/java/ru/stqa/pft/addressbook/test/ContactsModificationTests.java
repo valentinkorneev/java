@@ -7,7 +7,7 @@ public class ContactsModificationTests extends TestBase {
 
   @Test
   public void testContactModification() {
-    app.getContactHelper().goToContacts();
+    app.getNavigationHelper().goToContacts();
     app.getContactHelper().selectContact();
     app.getContactHelper().initContactModification();
     app.getContactHelper().fillContactForm(new ContactsData("jaredleto@thisisthehive.net", "+18885553535", "USA, California, Loss Angeles, The Hive", "jaja", "Leto", "Joseph", "Jared", null), false);
